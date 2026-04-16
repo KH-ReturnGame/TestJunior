@@ -1,0 +1,62 @@
+C#
+-awake -> 씬이 시작될떄 젤 처음
+-start -> update 직전, awake 이후
+-update 매 프레임마다 -> 컴퓨터 사양에 따라 달라짐
+-fixed update -> 일정 초마다(물리연산에 사용)
+
+-using UnityEngine; --> 이미 만들어진것을 사용하는것
+
+- 모든 명령어의 끝에 ;을 붙여야 한다.
+- //주석 --> 우리가 메모할수 있는곳 컴퓨터가 // 는 안읽음
+- Debug.Log();
+- Debug.Log(" Hello World!"); --> 원하는 내용을 집어 넣은것
+
+
+
+using UnityEngine;
+
+public class HPTest : MonoBehaviour
+{
+    void Start()
+    {
+        int HP = 100;
+
+        HP += 10;
+        Debug.Log("회복 물약 사용, 현재 HP : " + HP);
+
+        HP -= 5 * 5;
+        Debug.Log("화살 5대 맞음, 현재 HP : " + HP);
+
+        HP *= 2;
+        Debug.Log("버프 적용, 현재 HP : " + HP);
+
+        HP /= 5;
+        Debug.Log("함정에 걸림, 현재 HP : " + HP);
+    }
+}
+
+[변수 선언]
+- 정수형
+int
+ --> ex) int test_score=100;
+=은 할당 연산자 / == is 비교연산자 / != is 다르다 / ||--> 둘중하나, &&--> 두개다 만족 
+   ex) int a = 1;
+        a+- 10;
+Debug.Log11
+-  맴버 접근 연산자 .(dot);---> trans.position.x   trans안에 있는 position안에 있는 x
+ex) int a = 경희고.학생수;
+Debug.Log(a);
+>>722
+
+- 실수형
+float
+- 블리안 ( 참 거짓) 형
+ bool
+- 문자형
+string
+
+
+
+[함수 정의]
+ - 반환형 함수
+ - 비 반환형 함수{void}
